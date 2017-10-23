@@ -12,9 +12,12 @@
 		78511CFF1F9DB630006E5C57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78511CFD1F9DB630006E5C57 /* Main.storyboard */; };
 		78511D011F9DB630006E5C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78511D001F9DB630006E5C57 /* Assets.xcassets */; };
 		78511D041F9DB630006E5C57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78511D021F9DB630006E5C57 /* LaunchScreen.storyboard */; };
+		78511D0C1F9DB983006E5C57 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 78511D0B1F9DB983006E5C57 /* pokemon.csv */; };
+		FA30BE712CFBD5DD5AD3281D /* Pods_Pokedex3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8EB9FB2B77A32329094E17D /* Pods_Pokedex3.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77E62F270714F859DF81674F /* Pods-Pokedex3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex3.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pokedex3/Pods-Pokedex3.release.xcconfig"; sourceTree = "<group>"; };
 		78511CF61F9DB630006E5C57 /* Pokedex3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78511CF91F9DB630006E5C57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78511CFB1F9DB630006E5C57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		78511D001F9DB630006E5C57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78511D031F9DB630006E5C57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78511D051F9DB630006E5C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78511D0B1F9DB983006E5C57 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		95C1A9BF205DF1B6C1823A4E /* Pods-Pokedex3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pokedex3/Pods-Pokedex3.debug.xcconfig"; sourceTree = "<group>"; };
+		E8EB9FB2B77A32329094E17D /* Pods_Pokedex3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokedex3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA30BE712CFBD5DD5AD3281D /* Pods_Pokedex3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				78511CF81F9DB630006E5C57 /* Pokedex3 */,
 				78511CF71F9DB630006E5C57 /* Products */,
+				CB3CD21E494E6FE9BE226133 /* Pods */,
+				A149F1991594FAB03D0058E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +67,28 @@
 				78511CFB1F9DB630006E5C57 /* ViewController.swift */,
 				78511CFD1F9DB630006E5C57 /* Main.storyboard */,
 				78511D001F9DB630006E5C57 /* Assets.xcassets */,
+				78511D0B1F9DB983006E5C57 /* pokemon.csv */,
 				78511D021F9DB630006E5C57 /* LaunchScreen.storyboard */,
 				78511D051F9DB630006E5C57 /* Info.plist */,
 			);
 			path = Pokedex3;
+			sourceTree = "<group>";
+		};
+		A149F1991594FAB03D0058E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8EB9FB2B77A32329094E17D /* Pods_Pokedex3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB3CD21E494E6FE9BE226133 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95C1A9BF205DF1B6C1823A4E /* Pods-Pokedex3.debug.xcconfig */,
+				77E62F270714F859DF81674F /* Pods-Pokedex3.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78511D081F9DB630006E5C57 /* Build configuration list for PBXNativeTarget "Pokedex3" */;
 			buildPhases = (
+				22303B81D27D5F134F45593E /* [CP] Check Pods Manifest.lock */,
 				78511CF21F9DB630006E5C57 /* Sources */,
 				78511CF31F9DB630006E5C57 /* Frameworks */,
 				78511CF41F9DB630006E5C57 /* Resources */,
+				C687AAFF44F4D01CEC50495E /* [CP] Embed Pods Frameworks */,
+				C2748C3010D5B8AEB562815E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,11 +155,66 @@
 			files = (
 				78511D041F9DB630006E5C57 /* LaunchScreen.storyboard in Resources */,
 				78511D011F9DB630006E5C57 /* Assets.xcassets in Resources */,
+				78511D0C1F9DB983006E5C57 /* pokemon.csv in Resources */,
 				78511CFF1F9DB630006E5C57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22303B81D27D5F134F45593E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pokedex3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2748C3010D5B8AEB562815E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pokedex3/Pods-Pokedex3-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C687AAFF44F4D01CEC50495E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pokedex3/Pods-Pokedex3-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pokedex3/Pods-Pokedex3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		78511CF21F9DB630006E5C57 /* Sources */ = {
@@ -260,6 +345,7 @@
 		};
 		78511D091F9DB630006E5C57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95C1A9BF205DF1B6C1823A4E /* Pods-Pokedex3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pokedex3/Info.plist;
@@ -272,6 +358,7 @@
 		};
 		78511D0A1F9DB630006E5C57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77E62F270714F859DF81674F /* Pods-Pokedex3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pokedex3/Info.plist;
